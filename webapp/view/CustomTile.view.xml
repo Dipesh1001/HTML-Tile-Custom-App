@@ -1,0 +1,26 @@
+<mvc:View controllerName="html5.customtile.controller.CustomTile"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:microchart="sap.suite.ui.microchart"
+    xmlns="sap.m">
+    <GenericTile
+            header="{title}"
+            sizeBehavior="Responsive"
+            wrappingType="Hyphenated"
+            additionalTooltip="My Additional Tooltip"
+            valueColor="Good"
+            subheader="{description}"
+            frameType="OneByOne">
+            <TileContent >
+                <HBox>
+                    <microchart:RadialMicroChart size="S" percentage="45" />
+                    <!-- <microchart:ComparisonMicroChart size="S" press="press">
+                        <microchart:data>
+                            <microchart:ComparisonMicroChartData title="These" value="10" color="Good" />
+                            <microchart:ComparisonMicroChartData title="Are" value="50" color="Critical" />
+                            <microchart:ComparisonMicroChartData title="Samples" value="20" color="Error" />
+                        </microchart:data>
+                    </microchart:ComparisonMicroChart> -->
+                </HBox>
+            </TileContent>
+        </GenericTile>
+</mvc:View>
